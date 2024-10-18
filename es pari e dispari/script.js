@@ -33,28 +33,32 @@ function isEven(n) {
  	
  }
 
+ 
  let esito = ` ${userNumber} + ${aiNumber} è ${userChoise}, quindi HAI VINTO `
-
+ 
  // ============== SOLUZIONE CON LA SOMMA =============================
-
-
+ 
+ 
  let somma = aiNumber + userNumber
-
+ 
  if (isEven(somma) && userChoise === 'pari'){
-
-    esito = ` ${userNumber} + ${aiNumber} è ${userChoise}, quindi HAI VINTO `
+     
+     esito = ` ${userNumber} + ${aiNumber} è ${userChoise}, quindi HAI VINTO `
+     
+    } else if (isEven(somma)){
+        esito = ` ${userNumber} + ${aiNumber} è pari, quindi HAI PERSO  `
+        
+    } else if (userChoise === 'pari'){
+        
+        esito = ` ${userNumber} + ${aiNumber} è dispari , quindi HAI PERSO `
+        
+    }
     
- } else if (isEven(somma)){
-    esito = ` ${userNumber} + ${aiNumber} è pari, quindi HAI PERSO  `
-
- } else if (userChoise === 'pari'){
-
-     esito = ` ${userNumber} + ${aiNumber} è dispari , quindi HAI PERSO `
-
- }
-
-
-
+    
+    console.log(
+       'Mio (' + userNumber + ') Tuo(' + aiNumber + ') ' + 'Hai ' + ((( userChoise === 'pari' && isEven(somma) ) || ( userChoise === 'dispari' && !isEven(somma) )) ? 'Vinto' : 'Perso') 
+     );
+    
 /* ====================== SOLUZIONE CON  XOR ================================
 
 
