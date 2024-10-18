@@ -55,37 +55,37 @@ function isEven(n) {
     }
     
     
-    console.log(
-       'Mio (' + userNumber + ') Tuo(' + aiNumber + ') ' + 'Hai ' + ((( userChoise === 'pari' && isEven(somma) ) || ( userChoise === 'dispari' && !isEven(somma) )) ? 'Vinto' : 'Perso') 
-     );
     
-/* ====================== SOLUZIONE CON  XOR ================================
-
-
- if (userChoise === 'pari'){
-
+    /* ====================== SOLUZIONE CON  XOR ================================
+    
+    
+    if (userChoise === 'pari'){
+        
     if (isEven(userNumber) ^ isEven(aiNumber)){
         esito = ` ${userNumber} + ${aiNumber} è dispari, quindi HAI PERSO `
-
-    } else{
-        esito = ` ${userNumber} + ${aiNumber} è pari, quindi HAI VINTO `
+        
+        } else{
+            esito = ` ${userNumber} + ${aiNumber} è pari, quindi HAI VINTO `
     }
-
-
- } else {
     
+    
+    } else {
+        
     if (isEven(userNumber) ^ isEven(aiNumber)){
         esito = ` ${userNumber} + ${aiNumber} è dispari, quindi HAI VINTO `
-
-    } else{
-        esito = ` ${userNumber} + ${aiNumber} è pari, quindi HAI PERSO `
+        
+        } else{
+            esito = ` ${userNumber} + ${aiNumber} è pari, quindi HAI PERSO `
     }
-
- }
-
- */ 
-
- console.log(esito)
-
-
+    
+    }
+    
+    */ 
+   
+   console.log(esito)
+   
+   
+   console.log(
+      'Mio (' + userNumber + ') Tuo(' + aiNumber + ') ' + 'Hai ' + ((( userChoise === 'pari' && isEven(somma) ) || ( userChoise === 'dispari' && !isEven(somma) )) ? 'Vinto' : 'Perso') 
+    );
 
