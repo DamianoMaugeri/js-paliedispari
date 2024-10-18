@@ -13,23 +13,23 @@ const lowerUserWord = userWord.toLocaleLowerCase()
 // creare la parola invertita 
 
 
-/*  // ============ DA CAPIRE PERCHE' NON FUNZIONA ===========================
+// ============ DA CAPIRE PERCHE' NON FUNZIONA ===========================
 function wordReverse(text) {
     let newText = ''
-    for ( let i = 0; i < text.lenght ; i++){
+    for ( let i = 0; i < text.length ; i++){
         newText += text.at(-i -1)
     }
-
+    console.log(newText);
     return newText
 
 }
 
-const reversedWord = wordReverse( lowerUserWord)
-console.log(reversedWord)
-
-*/
+const reversedText = wordReverse(lowerUserWord)
+console.log(reversedText)
 
 
+
+/*
 function stringReverse(text) {
 	let newText = ''
 	for (let i = 0; i < text.length; i++) {
@@ -41,7 +41,7 @@ function stringReverse(text) {
 }
 
 const reversedText = stringReverse(lowerUserWord) // string
-
+*/
 //controllare se la parola invertita è uguale a quella inserita trasformata in minuscolo 
 
 let result =`La parola ${userWord} non è palindroma`
